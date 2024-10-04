@@ -62,7 +62,7 @@
         <version>9.4.5.v20170502</version>
         <configuration>
           <webApp>
-            <contextPath>/web-nfe-jsp</contextPath>
+            <contextPath>/web-nfe</contextPath>
           </webApp>
         </configuration>
       </plugin>
