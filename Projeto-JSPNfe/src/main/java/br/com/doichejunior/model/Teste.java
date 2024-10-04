@@ -40,7 +40,8 @@ public class Teste {
         destinatario.setEndereco(endereco);
 
         //Get emitente
-        Emitente emitente = new Emitente("08187168000160");
+        Emitente emitente = new Emitente();
+        emitente.setCpfCnpj("08187168000160");
 
         //Bean da nota
         NfE nfE = new NfE();
