@@ -11,11 +11,15 @@ public class NfE {
     private Emitente emitente;
     private Destinatario destinatario;
     private List<Item> itens;
-    private List<Pagamento> pagametnos;
+    private List<Pagamento> pagamentos;
     private ResponsavelTecnico responsavelTecnico;
+
+
+
+
     public NfE(){}
 
-    public NfE(String idIntegracao, char presencial, boolean consumidorFinal, String natureza, Emitente emitente, Destinatario destinatario, List<Item> itens, List<Pagamento> pagametnos, ResponsavelTecnico responsavelTecnico) {
+    public NfE(String idIntegracao, char presencial, boolean consumidorFinal, String natureza, Emitente emitente, Destinatario destinatario, List<Item> itens, List<Pagamento> pagamentos, ResponsavelTecnico responsavelTecnico) {
         this.idIntegracao = idIntegracao;
         this.presencial = presencial;
         this.consumidorFinal = consumidorFinal;
@@ -23,7 +27,7 @@ public class NfE {
         this.emitente = emitente;
         this.destinatario = destinatario;
         this.itens = itens;
-        this.pagametnos = pagametnos;
+        this.pagamentos = pagamentos;
         this.responsavelTecnico = responsavelTecnico;
     }
 
@@ -83,12 +87,12 @@ public class NfE {
         this.itens = itens;
     }
 
-    public List<Pagamento> getPagametnos() {
-        return pagametnos;
+    public List<Pagamento> getPagamentos() {
+        return pagamentos;
     }
 
-    public void setPagametnos(List<Pagamento> pagametnos) {
-        this.pagametnos = pagametnos;
+    public void setPagamentos(List<Pagamento> pagamentos) {
+        this.pagamentos = pagamentos;
     }
 
     public ResponsavelTecnico getResponsavelTecnico() {
@@ -100,16 +104,18 @@ public class NfE {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        NfE nfE = (NfE) o;
-        return presencial == nfE.presencial && consumidorFinal == nfE.consumidorFinal && Objects.equals(idIntegracao, nfE.idIntegracao) && Objects.equals(natureza, nfE.natureza) && Objects.equals(emitente, nfE.emitente) && Objects.equals(destinatario, nfE.destinatario) && Objects.equals(itens, nfE.itens) && Objects.equals(pagametnos, nfE.pagametnos) && Objects.equals(responsavelTecnico, nfE.responsavelTecnico);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(idIntegracao, presencial, consumidorFinal, natureza, emitente, destinatario, itens, pagametnos, responsavelTecnico);
+    public String toString() {
+        return "NfE{" +
+                "idIntegracao='" + idIntegracao + '\'' +
+                ", presencial=" + presencial +
+                ", consumidorFinal=" + consumidorFinal +
+                ", natureza='" + natureza + '\'' +
+                ", emitente=" + emitente +
+                ", destinatario=" + destinatario +
+                ", itens=" + itens +
+                ", pagamentos=" + pagamentos +
+                ", responsavelTecnico=" + responsavelTecnico +
+                '}';
     }
 }
 
