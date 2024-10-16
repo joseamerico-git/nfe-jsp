@@ -1,8 +1,7 @@
-package br.com.doichejunior.model;
-
-public class Tributos {
-    private Icms icms;
-    private Pis pis;
-    private Cofins cofins;
-
+package model;
+public class Tributos{
+    public Icms icms;
+    public Pis pis;
+    public Cofins cofins;
 }
+
