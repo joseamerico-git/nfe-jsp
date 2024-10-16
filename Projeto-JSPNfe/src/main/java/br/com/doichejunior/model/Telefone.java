@@ -1,6 +1,6 @@
-package model;
-public class Telefone{
-    public String ddd;
-    public String numero;
-}
+package br.com.doichejunior.model;
 
+public class Telefone {
+	public String ddd;
+	public String numero;
+}
