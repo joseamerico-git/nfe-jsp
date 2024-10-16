@@ -62,12 +62,18 @@ public class Nfe {
 		this.destinatario = destinatario;
 	}
 
-	public List<Iten> getItens() {
-		return itens;
-	}
+	
 
 	public void setItens(List<Iten> itens) {
 		this.itens = itens;
+	}
+
+	@Override
+	public String toString() {
+		return "Nfe [idIntegracao=" + idIntegracao + ", presencial=" + presencial + ", consumidorFinal="
+				+ consumidorFinal + ", natureza=" + natureza + ", emitente=" + emitente + ", destinatario="
+				+ destinatario + ", itens=" + itens + ", pagamentos=" + pagamentos + ", responsavelTecnico="
+				+ responsavelTecnico + "]";
 	}
 
 	public ArrayList<Pagamento> getPagamentos() {

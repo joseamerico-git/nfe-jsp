@@ -3,9 +3,31 @@ package br.com.doichejunior.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.doichejunior.model.certificados.Certificado;
+import br.com.doichejunior.model.veiculo.TipoOperacao;
+
 public class Teste {
 
 	public static void main(String[] args) {
+		
+		//certificado Authorizations:
+		//x-api-key = "token"
+		//endpoint  GET sandbox:  https://api.sandbox.plugnotas.com.br/certificado ou produção: https://api.plugnotas.com.br/certificado
+		
+		
+        Certificado certificado = new Certificado();
+        certificado.setId("5b855b0926ddb251e0f0ef42");
+        certificado.setNome("CN=TECNOSPEED S A:08187168000160, OU=Certificado PJ A1, OU=AC SOLUTI Multipla, OU=AC SOLUTI, OU=Autoridade Certificadora Raiz Brasileira v2, O=ICP-Brasil, C=BR, SE=26 41 18 05 02 40 D6 8A");
+        certificado.setHash("8b86eef6ac2282c7dd4c2dc0ab09af3e");
+        certificado.setVencimento("03/05/2019 00:00:00");
+        certificado.setCnpj("8187168000160");
+        certificado.setEmail("");
+        
+        // POST certificado: sandbox https://api.sandbox.plugnotas.com.br/certificado produção: https://api.plugnotas.com.br/certificado
+         
+        //Nfe 
+        //endpoint POST sandobox: https://api.sandbox.plugnotas.com.br/nfe ou produção: https://api.plugnotas.com.br/nfe
+      
 		// Lista de notas
 		List<Iten> itens = new ArrayList<Iten>();
 		Iten item = new Iten();
@@ -37,7 +59,7 @@ public class Teste {
 		destinatario.setEmail("contato@tecnospeed.com.br");
 		destinatario.setEndereco(endereco);
 
-		// Get emitente
+		// GET emitente
 		Emitente emitente = new Emitente();
 		emitente.setCpfCnpj("08187168000160");
 
@@ -52,7 +74,21 @@ public class Teste {
 
 		nfE.setItens(itens);
 		System.out.println(nfE.toString());
+		
+		//DELETE nfe sandbox: https://api.sandbox.plugnotas.com.br/nfse/servico/{idServico} ou produção:https://api.plugnotas.com.br/nfse/servico/{idServico}
 
+		
+		
+		//Veiculos: 
+		
+		
+		for(TipoOperacao t:  TipoOperacao.values()) {
+			System.out.println(t.getDescricao()+" - " + t.name());
+		}
+		
+		
+		
+		
 		/*
 		 * try {
 		 * 
