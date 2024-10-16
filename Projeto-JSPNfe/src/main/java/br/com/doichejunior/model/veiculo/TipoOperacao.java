@@ -1,7 +1,7 @@
 package br.com.doichejunior.model.veiculo;
 
 public enum TipoOperacao {
-	
+			
 
 	//1=Venda concessionária 2=Faturamento direto para consumidor final 3=Venda direta para grandes consumidores (frotista, governo, ...) 0=Outros
 		    VENDA_CONCECIONARIA("1"),
@@ -12,8 +12,19 @@ public enum TipoOperacao {
 		   
 
 		    private String descricao;
+		    
+		    private Integer tipoOperacao;
+		    
+		    public Integer getTipoOperacao() {
+				return tipoOperacao;
+			}
 
-		    TipoOperacao(String descricao) {
+			public void setTipoOperacao(Integer tipoOperacao) {
+				this.tipoOperacao = tipoOperacao;
+			}
+
+			TipoOperacao(String descricao) {
+				this.tipoOperacao= Integer.valueOf(descricao);
 		        this.descricao = descricao;
 		    }
 

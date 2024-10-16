@@ -5,6 +5,7 @@ import java.util.List;
 
 import br.com.doichejunior.model.certificados.Certificado;
 import br.com.doichejunior.model.veiculo.TipoOperacao;
+import br.com.doichejunior.model.veiculo.Veiculo;
 
 public class Teste {
 
@@ -81,9 +82,14 @@ public class Teste {
 		
 		//Veiculos: 
 		
+		Veiculo veiculo = new Veiculo();
+		veiculo.setTipoOperacao(Integer.valueOf(TipoOperacao.VENDA_CONCECIONARIA.getDescricao()));
+		
+		System.out.println("TipoOperação: "+veiculo.getTipoOperacao());
 		
 		for(TipoOperacao t:  TipoOperacao.values()) {
-			System.out.println(t.getDescricao()+" - " + t.name());
+			System.out.println(t.getDescricao() + " - " + t.name());
+			
 		}
 		
 		

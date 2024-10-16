@@ -2,6 +2,16 @@ package br.com.doichejunior.model.veiculo;
 
 public class Veiculo {
 	
+	private Integer tipoOperacao;
+
+	public Integer getTipoOperacao() {
+		return tipoOperacao;
+	}
+
+	public void setTipoOperacao(Integer tipoOperacao) {
+		this.tipoOperacao = tipoOperacao;
+	}
+	
 	
 	
 	/*
