@@ -10,6 +10,16 @@ public enum TipoCombustivel {
 	
 	
 	private String descricao;
+	private Integer tipoCombustivel;
+	
+	public Integer getTipoCombustivel() {
+		return tipoCombustivel;
+	}
+
+	public void setTipoCombustivel(Integer tipoCombustivel) {
+		this.tipoCombustivel = tipoCombustivel;
+	}
+
 	public String getDescricao() {
 		return descricao;
 	}
@@ -20,6 +30,7 @@ public enum TipoCombustivel {
 
 	TipoCombustivel(String descricao) {
 		// TODO Auto-generated constructor stub
+		this.tipoCombustivel= Integer.valueOf(descricao);
 		this.descricao = descricao;
 	}
 	   

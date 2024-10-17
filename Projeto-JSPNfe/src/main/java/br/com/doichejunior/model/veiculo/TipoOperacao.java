@@ -13,18 +13,11 @@ public enum TipoOperacao {
 
 		    private String descricao;
 		    
-		    private Integer tipoOperacao;
 		    
-		    public Integer getTipoOperacao() {
-				return tipoOperacao;
-			}
-
-			public void setTipoOperacao(Integer tipoOperacao) {
-				this.tipoOperacao = tipoOperacao;
-			}
+		   
 
 			TipoOperacao(String descricao) {
-				this.tipoOperacao= Integer.valueOf(descricao);
+				
 		        this.descricao = descricao;
 		    }
 
