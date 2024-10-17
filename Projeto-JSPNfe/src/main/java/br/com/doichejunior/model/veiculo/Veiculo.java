@@ -3,7 +3,7 @@ package br.com.doichejunior.model.veiculo;
 public class Veiculo {
 	
 	private Integer tipoOperacao;
-	private String chassi;
+	private String chassi; //vin (código identificação-veículo) alfa-numérico de 17 dígitos
 	private String codigoCor;
 	private String descricaoCor;
 	private Integer potenciaMotor;
@@ -18,12 +18,200 @@ public class Veiculo {
 	private Integer anoModelo;
 	private Integer anoFabricacao;
 	private String tipoPintura;
-	private Tipo tipo;
+	private Tipo tipo; //Utilizar tabela Renvam
 	private Especie especie;
+	private CondicaoVin condicaoVin; //Utiliza Renvan:
+	private Condicao condicao;
+	private String codigoModelo;
+	private CodigoCorDenatran codigoCorDenatran;
+	private Integer lotacaoMaxima; //Quantidade máxima de passageiros sentados, incluindo motorista
+	private Restricao restricao;
 	
-	
-	
-	 
+				 
+
+	public String getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(String chassi) {
+		this.chassi = chassi;
+	}
+
+	public String getCodigoCor() {
+		return codigoCor;
+	}
+
+	public void setCodigoCor(String codigoCor) {
+		this.codigoCor = codigoCor;
+	}
+
+	public String getDescricaoCor() {
+		return descricaoCor;
+	}
+
+	public void setDescricaoCor(String descricaoCor) {
+		this.descricaoCor = descricaoCor;
+	}
+
+	public Integer getPotenciaMotor() {
+		return potenciaMotor;
+	}
+
+	public void setPotenciaMotor(Integer potenciaMotor) {
+		this.potenciaMotor = potenciaMotor;
+	}
+
+	public Integer getCilindradas() {
+		return cilindradas;
+	}
+
+	public void setCilindradas(Integer cilindradas) {
+		this.cilindradas = cilindradas;
+	}
+
+	public double getPesoLiquido() {
+		return pesoLiquido;
+	}
+
+	public void setPesoLiquido(double pesoLiquido) {
+		this.pesoLiquido = pesoLiquido;
+	}
+
+	public double getPesoBruto() {
+		return pesoBruto;
+	}
+
+	public void setPesoBruto(double pesoBruto) {
+		this.pesoBruto = pesoBruto;
+	}
+
+	public String getNumeroSerie() {
+		return numeroSerie;
+	}
+
+	public void setNumeroSerie(String numeroSerie) {
+		this.numeroSerie = numeroSerie;
+	}
+
+	public TipoCombustivel getTipoCombustivel() {
+		return tipoCombustivel;
+	}
+
+	public void setTipoCombustivel(TipoCombustivel tipoCombustivel) {
+		this.tipoCombustivel = tipoCombustivel;
+	}
+
+	public String getNumeroMotor() {
+		return numeroMotor;
+	}
+
+	public void setNumeroMotor(String numeroMotor) {
+		this.numeroMotor = numeroMotor;
+	}
+
+	public double getCapacidadeTracao() {
+		return capacidadeTracao;
+	}
+
+	public void setCapacidadeTracao(double capacidadeTracao) {
+		this.capacidadeTracao = capacidadeTracao;
+	}
+
+	public String getDistanciaEixos() {
+		return distanciaEixos;
+	}
+
+	public void setDistanciaEixos(String distanciaEixos) {
+		this.distanciaEixos = distanciaEixos;
+	}
+
+	public Integer getAnoModelo() {
+		return anoModelo;
+	}
+
+	public void setAnoModelo(Integer anoModelo) {
+		this.anoModelo = anoModelo;
+	}
+
+	public Integer getAnoFabricacao() {
+		return anoFabricacao;
+	}
+
+	public void setAnoFabricacao(Integer anoFabricacao) {
+		this.anoFabricacao = anoFabricacao;
+	}
+
+	public String getTipoPintura() {
+		return tipoPintura;
+	}
+
+	public void setTipoPintura(String tipoPintura) {
+		this.tipoPintura = tipoPintura;
+	}
+
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public Especie getEspecie() {
+		return especie;
+	}
+
+	public void setEspecie(Especie especie) {
+		this.especie = especie;
+	}
+
+	public CondicaoVin getCondicaoVin() {
+		return condicaoVin;
+	}
+
+	public void setCondicaoVin(CondicaoVin condicaoVin) {
+		this.condicaoVin = condicaoVin;
+	}
+
+	public Condicao getCondicao() {
+		return condicao;
+	}
+
+	public void setCondicao(Condicao condicao) {
+		this.condicao = condicao;
+	}
+
+	public String getCodigoModelo() {
+		return codigoModelo;
+	}
+
+	public void setCodigoModelo(String codigoModelo) {
+		this.codigoModelo = codigoModelo;
+	}
+
+	public CodigoCorDenatran getCodigoCorDenatran() {
+		return codigoCorDenatran;
+	}
+
+	public void setCodigoCorDenatran(CodigoCorDenatran codigoCorDenatran) {
+		this.codigoCorDenatran = codigoCorDenatran;
+	}
+
+	public Integer getLotacaoMaxima() {
+		return lotacaoMaxima;
+	}
+
+	public void setLotacaoMaxima(Integer lotacaoMaxima) {
+		this.lotacaoMaxima = lotacaoMaxima;
+	}
+
+	public Restricao getRestricao() {
+		return restricao;
+	}
+
+	public void setRestricao(Restricao restricao) {
+		this.restricao = restricao;
+	}
 
 	public Integer getTipoOperacao() {
 		return tipoOperacao;
