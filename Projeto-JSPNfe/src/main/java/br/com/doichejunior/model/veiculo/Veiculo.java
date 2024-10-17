@@ -3,6 +3,27 @@ package br.com.doichejunior.model.veiculo;
 public class Veiculo {
 	
 	private Integer tipoOperacao;
+	private String chassi;
+	private String codigoCor;
+	private String descricaoCor;
+	private Integer potenciaMotor;
+	private Integer cilindradas;
+	private double pesoLiquido; //quatro casas decimais em toneladas...
+	private double pesoBruto;  // quatro casas e em toneladas
+	private String numeroSerie;
+	private TipoCombustivel tipoCombustivel;
+	private String numeroMotor;
+	private double capacidadeTracao;
+	private String distanciaEixos;
+	private Integer anoModelo;
+	private Integer anoFabricacao;
+	private String tipoPintura;
+	private Tipo tipo;
+	private Especie especie;
+	
+	
+	
+	 
 
 	public Integer getTipoOperacao() {
 		return tipoOperacao;
